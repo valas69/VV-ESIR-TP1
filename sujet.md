@@ -24,28 +24,6 @@ Ce bug local, n’affecte que la NASA, mais annule une exploration dans l’espa
 Tester le scénario réel aurait certainement permis d’éviter cette catastrophe technique.
 Les testeurs se seraient rendus compte que la capacité mémoire aurait été dépassée lors du décollage réel et auraient donc pu prévoir une mémoire plus importante.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Question 2 : Expliquer un bug et sa solution
 
 Nous allons étudier le bug 796 nommé “SetUniqueList.createSetBasedOnList”.
@@ -54,10 +32,6 @@ Le bug intervient lorsque l’on souhaite appeler la méthode “SetUniqueList.c
 La méthode est censée ajouter des éléments d’une liste à la valeur de retour mais ne le fait pas.
 En effet, comme nous pouvons le voir sur la capture ci-dessous.
 La commande subSet.addAll a été supprimée malencontreusement suite à un push sur github.
-
-
-
-
 
 Ce qui provoque un dysfonctionnement de la méthode.
 Pour résoudre ce problème, le code a été modifié à nouveau avec l’ajout de cette méthode supprimée, ainsi que quelques tests supplémentaires.
@@ -78,26 +52,7 @@ subSet = new HashSet<>0);
         }
 ```
 
-
-
-
-
-
-
-
-
-
-
 Une méthode catch concernant InstantiationException a été ajoutée afin de renvoyer un message d’erreur en cas de mauvaise instanciation d’une variable.
-
-
-
-
-
-
-
-
-
 
 Question 3 : Résumé des expériences de Netflix
 
@@ -107,24 +62,10 @@ De plus, Netflix est géographiquement distribué dans le monde entier, donc si 
 Pour Netflix, cette méthode fonctionne plutôt bien car les mises à jour sont déployées, fonctionnent et ne causent pas de bug.
 D’autres multinationales utilisent également cette méthode, entre autres Google, Amazon, Facebook et Microsoft.
 
-
-
-
-
 Question 4 : Avantages des spécifications formelles de Web Assembly
 
 Webassembly permet de compiler d’autres langages dans un format que nos navigateurs peuvent comprendre, c’est en effet grâce aux spécifications formelles. Cela permet d’avoir des performances presque natives.
 Malgré cela, nous ne sommes pas à l’abri d'éventuels bug, il faut donc tout de même tester et voir si la compilation est bien fonctionnelle afin d’être sur un produit stable.
-
-
-
-
-
-
-
-
-
-
 
 Question 5 : Mechanized specification
 
